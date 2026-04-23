@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chẳng Còn Gì Để Nói</title>
+
+<style>
+body {
+    background: black;
+    color: #ccc;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    margin-top: 40px;
+    opacity: 0.8;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#questionBox {
+    display: none;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>…có những chuyện không thể nói ra</h1>
+
+<button onclick="startGame()">ở lại chút không?</button>
+
+<div id="questionBox">
+    <h2>ê… bạn có hiểu cảm giác này không?</h2>
+    <button onclick="goTikTok()">không</button>
+</div>
+
+<script>
+function startGame() {
+    document.getElementById("questionBox").style.display = "block";
+}
+
+function goTikTok() {
+    window.location.href = "https://vt.tiktok.com/ZS9NMEcKA/";
+}
+</script>
+
+</body>
+</html>
